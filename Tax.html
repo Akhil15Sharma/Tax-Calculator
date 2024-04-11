@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <a class="navbar-brand" href="#">Tax </a>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h2 class="mb-4">Tax Calculator</h2>
+  <div class="calculator-box">
+    <form id="taxForm">
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" class="form-control" id="age" placeholder="Enter age">
+        <div class="invalid-feedback">Please enter a valid age</div>
+      </div>
+      <div class="form-group">
+        <label for="income">Gross Annual Income:</label>
+        <input type="text" class="form-control" id="income" placeholder="Enter income">
+        <small id="incomeHelp" class="form-text text-muted">Gross income is total salary in year before deductions.</small>
+
+      </div>
+      <div class="form-group">
+        <label for="extraIncome">Extra Income:</label>
+        <input type="text" class="form-control" id="extraIncome" placeholder="Enter extra income">
+      </div>
+      <div class="form-group">
+        <label for="deductions">Total Deductions:</label>
+        <input type="text" class="form-control" id="deductions" placeholder="Enter deductions">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Calculate Tax</button>
+    </form>
+  </div>
+  <div id="result" class="mt-4"></div>
+</div>
+
+<!-- Error icon -->
+<div class="error-icon">
+  <i class="fas fa-exclamation-circle"></i>
+</div>
+
+<!-- Bootstrap JS and Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
